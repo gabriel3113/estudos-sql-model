@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+
+# Poetry
+poetry.lock
+
+
+# SQLite
+*.db
+/data/
+
+
+# VSCode / IDE
+.vscode/
+.idea/

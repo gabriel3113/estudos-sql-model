@@ -1,0 +1,26 @@
+[project]
+name = "sqlmodel-exercicio"
+version = "0.1.0"
+description = "Exercício com SQLModel usando modelos Hero e Livros"
+authors = [
+{ name = "gabriel", email = "80714107+gabriel3113@users.noreply.github.com" }
+]
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+"sqlmodel>=0.0.24,<0.0.25",
+"SQLAlchemy>=2.0.14,<2.1.0"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+packages = [{ include = "app", from = "src" }]
+
+
+[tool.poetry.scripts]
+app = "app.seed:main"
